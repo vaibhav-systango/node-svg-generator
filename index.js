@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
   });
 
 app.use('/api', routes);
-console.log("process.env.port 3000==", process.env.PORT)
+console.log("process.env.port = ", process.env.PORT)
 var server = app.listen(process.env.PORT, function () {
   var host = server.address().address;
   var port = server.address().port;
