@@ -226,7 +226,7 @@ export function addLanscapeCardDetailColumnWithCustomText(textSymbol, text1, tex
     return cardDataFromXML[colNumber].map((value, index) => {
         return (
         <text key={index} transform={`matrix(1 0 0 1 ${colPosition} ${162.1667 + (23 * index)})`}>
-          <tspan x="0" y="0" style={{fill:'#11172C', fontFamily:'Montserrat-SemiBold', fontSize:'14px'}}>{cardDataFromXML[colNumber][index]}</tspan>
+          <tspan x="0" y="0" style={{fill:'#11172C', fontFamily:'Montserrat', fontSize:'14px'}}>{cardDataFromXML[colNumber][index]}</tspan>
         </text>)
       });
   }
