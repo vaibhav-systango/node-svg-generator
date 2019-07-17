@@ -18,9 +18,13 @@ var svg = svgRenderer(req.body.data);
 res.send(svg);
 });
 
-app.use('/api', routes);
+app.get('/', function (req, res) {
+  res.send("Server is working fine.");
+  });
 
-var server = app.listen(3000, function () {
+app.use('/api', routes);
+console.log("process.env.port 3000==", process.env.port)
+var server = app.listen(process.env.port, function () {
   var host = server.address().address;
   var port = server.address().port;
   console.log('Example app listening at http://%s:%s', host, port);
