@@ -195,7 +195,7 @@ export function addLanscapeCardDetailColumnWithCustomText(textSymbol, text1, tex
       }
       else if (customEffect == 'underline') {
         return (
-          <tspan x={ lineNo ? '12' : ''} style={{height:60}} style={{flexDirection: 'row'}}><tspan style={{ color: '#000000', textAlign: 'right', fontStyle: fontStyleValue }} x={textSymbol !== '' ? -12 : ''}>{textSymbol}</tspan><tspan>{text1}</tspan><tspan>{text2}</tspan><tspan>{dotsymbolText}</tspan><tspan x="80" style={{ textDecorationLine: 'underline', textDecorationStyle: 'solid', textDecorationColor: '#000000', paddingBottom: 2, fontStyle: fontStyleValue }}>{text3}</tspan></tspan>
+          <tspan x={ lineNo ? '12' : ''} style={{height:60}} style={{flexDirection: 'row'}}><tspan style={{ color: '#000000', textAlign: 'right', fontStyle: fontStyleValue }} x={textSymbol !== '' ? -12 : ''}>{textSymbol}</tspan><tspan>{text1}</tspan><tspan>{text2}</tspan><tspan>{dotsymbolText}</tspan><tspan x="80" style={{ fontWeight: 'bold', textDecorationLine: 'underline', textDecorationStyle: 'solid', textDecorationColor: '#000000', paddingBottom: 2, fontStyle: fontStyleValue }}>{text3}</tspan></tspan>
         )
       }
     }
@@ -213,11 +213,11 @@ export function addLanscapeCardDetailColumnWithCustomText(textSymbol, text1, tex
     text1 = (text1 == '') ? ' ' : text1
     if (text3 == '') {
       return (
-        <tspan x={ lineNo ? '12' : ''} style={{ flexDirection: 'row', height: 60 }}><tspan style={{ fontStyle: fontStyleValue }} x={textSymbol !== '' ? -12 : ''}>{textSymbol}</tspan><tspan>{text1}</tspan><tspan style={{ fontStyle: fontStyleValue }}>{text2}</tspan><tspan>{dotsymbolText}</tspan><tspan x={80} style={{ fontStyle: fontStyleValue }}>{text3}</tspan></tspan>
+        <tspan x={ lineNo ? '12' : ''} style={{ flexDirection: 'row', height: 60 }}><tspan style={{ fontStyle: fontStyleValue }} x={textSymbol !== '' ? -12 : ''}>{textSymbol}</tspan><tspan>{text1}</tspan><tspan style={{ fontStyle: fontStyleValue }}>{text2}</tspan><tspan>{dotsymbolText}</tspan><tspan x={80} style={{ fontStyle: fontStyleValue, fontWeight: 'bold' }}>{text3}</tspan></tspan>
       )
     } else {
       return (
-        <tspan x={ lineNo ? '12' : ''} style={{ flexDirection: 'row', height: 60 }}><tspan style={{ fontStyle: fontStyleValue }} x={textSymbol !== '' ? -12 : ''}>{textSymbol}</tspan><tspan>{text1}</tspan><tspan style={{ fontStyle: fontStyleValue }}>{text2}</tspan><tspan>{dotsymbolText}</tspan><tspan x={80} style={{ fontStyle: fontStyleValue }}>{text3}</tspan></tspan>
+        <tspan x={ lineNo ? '12' : ''} style={{ flexDirection: 'row', height: 60 }}><tspan style={{ fontStyle: fontStyleValue }} x={textSymbol !== '' ? -12 : ''}>{textSymbol}</tspan><tspan>{text1}</tspan><tspan style={{ fontStyle: fontStyleValue }}>{text2}</tspan><tspan>{dotsymbolText}</tspan><tspan x={80} style={{ fontStyle: fontStyleValue, fontWeight: 'bold' }}>{text3}</tspan></tspan>
       )
     }
   }
