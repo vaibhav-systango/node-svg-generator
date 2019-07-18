@@ -1,6 +1,6 @@
 import React from 'react';
 const DOMParser = require('xmldom').DOMParser;
-const helper = require('../utils/helper');
+const helper = require('../../utils/helper');
 let cardDataFromXML = null;
 let playerInitailDetail = [];
 let percentageVsLefty = '';
@@ -212,8 +212,8 @@ export default class App extends React.Component {
       id="Dark_theme"
       x="0px"
       y="0px"
-      viewBox="-246 73.3 466.5 430"
-      style={{ enableBackground: 'new -246 73.3 466.5 430' }}
+      viewBox="-246 73.3 466.5 470"
+      style={{ enableBackground: 'new -246 73.3 466.5 470' }}
       xmlSpace="preserve"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -228,26 +228,26 @@ export default class App extends React.Component {
           <path
             id="Rectangle_4_copy_9"
             style={{fill:'#3D4462',fillOpacity:0.57,'stroke':'#2E344B'}}
-            d="M-239.8,73.5h460l0,0v430.8l0,0h-460c-3.3,0-6-2.7-6-6V79.5
+            d="M-239.8,73.5h460l0,0v470.8l0,0h-460c-3.3,0-6-2.7-6-6V79.5
             C-245.8,76.2-243.1,73.5-239.8,73.5z"
           />
-          <path id="Rectangle_4_copy_7" style={{fill:'#CDE6FF'}} d="M-244.8,113.5h464l0,0v389.8l0,0h-458c-3.3,0-6-2.7-6-6V113.5L-244.8,113.5z" />
-          <path id="Rectangle_4_copy_8" style={{fill:'#CDE6FF'}} d="M-244.8,113.5h464l0,0v389.8l0,0h-458c-3.3,0-6-2.7-6-6V113.5L-244.8,113.5z" />
-          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-244.75" y1="253.625" x2="-90.75" y2="253.625" gradientTransform="matrix(1 0 0 -1 0 562)">
+          <path id="Rectangle_4_copy_7" style={{fill:'#CDE6FF'}} d="M-244.8,113.5h464l0,0v429.8l0,0h-458c-3.3,0-6-2.7-6-6V113.5L-244.8,113.5z" />
+          <path id="Rectangle_4_copy_8" style={{fill:'#CDE6FF'}} d="M-244.8,113.5h464l0,0v429.8l0,0h-458c-3.3,0-6-2.7-6-6V113.5L-244.8,113.5z" />
+          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-244.75" y1="233.625 " x2="-90.75" y2="233.625" gradientTransform="matrix(1 0 0 -1 0 562)">
             <stop offset="0" style={{ stopColor: '#FDFEFF' }} />
             <stop offset="1" style={{ stopColor: '#BCDEFF' }} />
           </linearGradient>
-          <path style={{fill:"url('#SVGID_1_')"}} d="M-244.8,113.5h154l0,0v389.8l0,0h-147c-3.9,0-7-3.1-7-7V113.5L-244.8,113.5z" />
-          <linearGradient id="Rectangle_588_copy_1_" gradientUnits="userSpaceOnUse" x1="-89.75" y1="253.625" x2="64.25" y2="253.625" gradientTransform="matrix(1 0 0 -1 0 562)">
+          <path style={{fill:"url('#SVGID_1_')"}} d="M-244.8,113.5h154l0,0v429.8l0,0h-147c-3.9,0-7-3.1-7-7V113.5L-244.8,113.5z" />
+          <linearGradient id="Rectangle_588_copy_1_" gradientUnits="userSpaceOnUse" x1="-89.75" y1="233.625" x2="64.25" y2="233.625" gradientTransform="matrix(1 0 0 -1 0 562)">
             <stop offset="0" style={{ stopColor: '#FDFEFF' }} />
             <stop offset="1" style={{ stopColor: '#BCDEFF' }} />
           </linearGradient>
-          <rect id="Rectangle_588_copy" x="-89.8" y="113.5" style={{fill:"url('#Rectangle_588_copy_1_')"}} width="154" height="389.8" />
-          <linearGradient id="Rectangle_588_copy_2_1_" gradientUnits="userSpaceOnUse" x1="65.25" y1="253.625" x2="219.25" y2="253.625" gradientTransform="matrix(1 0 0 -1 0 562)">
+          <rect id="Rectangle_588_copy" x="-89.8" y="113.5" style={{fill:"url('#Rectangle_588_copy_1_')"}} width="154" height="429.8" />
+          <linearGradient id="Rectangle_588_copy_2_1_" gradientUnits="userSpaceOnUse" x1="65.25" y1="233.625" x2="219.25" y2="233.625" gradientTransform="matrix(1 0 0 -1 0 562)">
             <stop offset="0" style={{ stopColor: '#FDFEFF' }} />
             <stop offset="1" style={{ stopColor: '#BCDEFF' }} />
           </linearGradient>
-          <rect id="Rectangle_588_copy_2" x="65.3" y="113.5" style={{fill:"url('#Rectangle_588_copy_2_1_')"}} width="154" height="389.8" />
+          <rect id="Rectangle_588_copy_2" x="65.3" y="113.5" style={{fill:"url('#Rectangle_588_copy_2_1_')"}} width="154" height="429.8" />
           </g>
         </g>
         </g>
@@ -261,6 +261,7 @@ export default class App extends React.Component {
       { helper.renderColumn(cardDataFromXML, 0, -211.5) }
       { helper.renderColumn(cardDataFromXML, 1, -60.5) }
       { helper.renderColumn(cardDataFromXML, 2, 101.1667) }
+      <line style={{opacity:0.2,fill:'none',stroke:'#2E344B'}} x1="-244.8" y1="142" x2="220.5" y2="142"/>
     </svg>
     
     <svg
@@ -268,8 +269,8 @@ export default class App extends React.Component {
       id="Dark_theme"
       x="0px"
       y="0px"
-      viewBox="-246 75 466.5 430"
-      style={{ enableBackground: 'new -246 75 466.5 430' }}
+      viewBox="-246 75 466.5 470"
+      style={{ enableBackground: 'new -246 75 466.5 470' }}
       xmlSpace="preserve"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -284,25 +285,25 @@ export default class App extends React.Component {
           <path
             id="Rectangle_4_copy_9"
             style={{fill:'#DB0040',fillOpacity:0.57,'stroke':'#2E344B'}}
-            d="M220,81v418c0,3.3-2.7,6-6,6h-460l0,0V75l0,0h460C217.3,75,220,77.7,220,81z"
+            d="M220,81v458c0,3.3-2.7,6-6,6h-460l0,0V75l0,0h460C217.3,75,220,77.7,220,81z"
           />
-          <path id="Rectangle_4_copy_7" style={{fill:'#CDE6FF'}} d="M219,115v383c0,3.3-2.7,6-6,6h-458l0,0V115l0,0H219L219,115z" />
-          <path id="Rectangle_4_copy_8" style={{fill:'#CDE6FF'}} d="M219,115v383c0,3.3-2.7,6-6,6h-458l0,0V115l0,0H219L219,115z" />
-          <linearGradient id="SVGID_1_1" gradientUnits="userSpaceOnUse" x1="-1227.0001" y1="307.5" x2="-1073.0001" y2="307.5" gradientTransform="matrix(-1 0 0 1 -1008.0001 2)">
+          <path id="Rectangle_4_copy_7" style={{fill:'#CDE6FF'}} d="M219,115v423c0,3.3-2.7,6-6,6h-458l0,0V115l0,0H219L219,115z" />
+          <path id="Rectangle_4_copy_8" style={{fill:'#CDE6FF'}} d="M219,115v423c0,3.3-2.7,6-6,6h-458l0,0V115l0,0H219L219,115z" />
+          <linearGradient id="SVGID_1_1" gradientUnits="userSpaceOnUse" x1="-1227.0001" y1="327.5" x2="-1073.0001"  y2="327.5" gradientTransform="matrix(-1 0 0 1 -1008.0001 2)">
             <stop offset="0" style={{ stopColor: '#FFC4D5' }} />
             <stop offset="1" style={{ stopColor: '#FDFEFF' }} />
           </linearGradient>
-          <path style={{fill:"url('#SVGID_1_1')"}} d="M219,115v382c0,3.9-3.1,7-7,7H65l0,0V115l0,0H219L219,115z" />
-          <linearGradient id="Rectangle_588_copy_1_1" gradientUnits="userSpaceOnUse" x1="-1072.0001" y1="307.5" x2="-918.0001" y2="307.5" gradientTransform="matrix(-1 0 0 1 -1008.0001 2)">
+          <path style={{fill:"url('#SVGID_1_1')"}} d="M219,115v422c0,3.9-3.1,7-7,7H65l0,0V115l0,0H219L219,115z" />
+          <linearGradient id="Rectangle_588_copy_1_1" gradientUnits="userSpaceOnUse" x1="-1072.0001" y1="327.5" x2="-918.0001" y2="327.5" gradientTransform="matrix(-1 0 0 1 -1008.0001 2)">
             <stop offset="0" style={{ stopColor: '#FFC4D5' }} />
             <stop offset="1" style={{ stopColor: '#FDFEFF' }} />
           </linearGradient>
-          <rect id="Rectangle_588_copy" x="-90" y="115" style={{fill:"url('#Rectangle_588_copy_1_1')"}} width="154" height="389" />
-          <linearGradient id="Rectangle_588_copy_2_1_1" gradientUnits="userSpaceOnUse" x1="-917.0001" y1="307.5" x2="-763.0001" y2="307.5" gradientTransform="matrix(-1 0 0 1 -1008.0001 2)">
+          <rect id="Rectangle_588_copy" x="-90" y="115" style={{fill:"url('#Rectangle_588_copy_1_1')"}} width="154" height="429" />
+          <linearGradient id="Rectangle_588_copy_2_1_1" gradientUnits="userSpaceOnUse" x1="-917.0001" y1="327.5" x2="-763.0001" y2="327.5" gradientTransform="matrix(-1 0 0 1 -1008.0001 2)">
             <stop offset="0" style={{ stopColor: '#FFC4D5' }} />
             <stop offset="1" style={{ stopColor: '#FDFEFF' }} />
           </linearGradient>
-          <rect id="Rectangle_588_copy_2" x="-245" y="115" style={{fill:"url('#Rectangle_588_copy_2_1_1')"}} width="154" height="389" />
+          <rect id="Rectangle_588_copy_2" x="-245" y="115" style={{fill:"url('#Rectangle_588_copy_2_1_1')"}} width="154" height="429" />
           </g>
         </g>
         </g>
@@ -316,8 +317,8 @@ export default class App extends React.Component {
       { helper.renderColumn(cardDataFromXML, 3, -211.5) }
       { helper.renderColumn(cardDataFromXML, 4, -60.5) }
       { helper.renderColumn(cardDataFromXML, 5, 101.1667) }
+    	<line style={{opacity:0.2,fill:'none',stroke:'#2E344B'}} x1="-244.8" y1="143.4" x2="220.5" y2="143.4"/>  
     </svg>
-    
   </span>
   )
   }

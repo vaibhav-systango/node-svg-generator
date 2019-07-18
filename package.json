@@ -2,9 +2,9 @@
   "name": "svg-node-react",
   "version": "1.0.0",
   "description": "Create SVG using XML",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
