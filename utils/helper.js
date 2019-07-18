@@ -73,9 +73,9 @@ export function getPlayerDetails(xmlSrc){
 
 export function getStealingString1(parseData){
     const { playerInitailDetail } = parseData;
-  //  let stealing = playerInitailDetail['stealing'].split(' ');
-   // let splitResult = stealing[0].split('stealing-')
-    return '';
+    let stealing = playerInitailDetail['stealing'].split(' ');
+    let splitResult = stealing[0].split('stealing-')
+    return splitResult;
 }
 
 export function getStealingString2(parseData){
@@ -226,7 +226,7 @@ export function addLanscapeCardDetailColumnWithCustomText(textSymbol, text1, tex
     return cardDataFromXML[colNumber].map((value, index) => {
         return (
         <text key={index} transform={`matrix(1 0 0 1 ${colPosition} ${162.1667 + (23 * index)})`}>
-          <tspan x="0" y="0" style={{fill:'#11172C', fontFamily:'Montserrat', fontSize:'14px'}}>{cardDataFromXML[colNumber][index]}</tspan>
+          <tspan x="0" y="0" style={{fill:'#11172C', fontFamily:'Montserrat', fontSize:'13px'}}>{cardDataFromXML[colNumber][index]}</tspan>
         </text>)
       });
   }

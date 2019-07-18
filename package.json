@@ -4,7 +4,6 @@
   "description": "Create SVG using XML",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "author": "",
@@ -13,7 +12,6 @@
     "babel-register": "^6.3.13",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "axios": "^0.19.0",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "node-fetch": "^2.6.0",

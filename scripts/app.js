@@ -1,10 +1,10 @@
 import React from 'react';
 const DOMParser = require('xmldom').DOMParser;
 const helper = require('../utils/helper');
-var cardDataFromXML = null;
-var playerInitailDetail = [];
-var percentageVsLefty = '';
-var percentageVsRighty = '';
+let cardDataFromXML = null;
+let playerInitailDetail = [];
+let percentageVsLefty = '';
+let percentageVsRighty = '';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -312,7 +312,7 @@ export default class App extends React.Component {
       <text transform="matrix(1 0 0 1 134 100.5)" style={{fill:'#FFFFFF', fontFamily:'Montserrat', fontSize:'14px'}}>{playerInitailDetail['power_right']}</text>
       <text transform="matrix(1 0 0 1 -175.4292 136.5)" style={{fill:'#DB0040', fontFamily:'Montserrat', fontSize:'18px'}}>
       1</text>
-      <text transform="matrix(1 0 0 1 -22.5711 137.5)" style={{fill:'#DB0040', fontFamily:'Montserrat', fontSize:'18px'}}>2555</text>
+      <text transform="matrix(1 0 0 1 -22.5711 137.5)" style={{fill:'#DB0040', fontFamily:'Montserrat', fontSize:'18px'}}>2</text>
       <text transform="matrix(1 0 0 1 138.0956 136.8333)" style={{fill:'#DB0040', fontFamily:'Montserrat', fontSize:'18px'}}>3</text>
       { helper.renderColumn(cardDataFromXML, 3, -211.5) }
       { helper.renderColumn(cardDataFromXML, 4, -60.5) }

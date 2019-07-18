@@ -22,9 +22,7 @@ router.post('/details', function(req, res) {
     playerInitailDetail['numberRightString2'] = playerInitailDetail['numbers_right'] ? helper.getNumberRightString2(parseData) : '';
     playerInitailDetail['bumberRightString1'] = playerInitailDetail['numbers_right'] ? helper.getNumberRightString1(parseData) : '';
     playerInitailDetail['pitcherBuntingString1'] = playerInitailDetail['bunting'] ? helper.getPitcherBuntingString1(parseData) : '';
-
     res.send(playerInitailDetail);
-    
 });
 
 module.exports = router;

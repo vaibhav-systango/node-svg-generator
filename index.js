@@ -1,9 +1,9 @@
 require("babel-register");
-var express = require('express');
-var app = express();
-var svgRenderer = require('./scripts/svg_renderer').default;
-var routes = require('./api/details');
-var bodyParser = require('body-parser')
+const express = require('express');
+const app = express();
+const svgRenderer = require('./scripts/svg_renderer').default;
+const routes = require('./api/details');
+const bodyParser = require('body-parser')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
@@ -14,7 +14,7 @@ app.use(function(req, res, next) {
 });
 
 app.post('/svg', function (req, res) {
-var svg = svgRenderer(req.body.data);
+const svg = svgRenderer(req.body.data);
 res.send(svg);
 });
 
@@ -24,8 +24,8 @@ app.get('/', function (req, res) {
 
 app.use('/api', routes);
 console.log("process.env.port = ", process.env.PORT)
-var server = app.listen(process.env.PORT, function () {
-  var host = server.address().address;
-  var port = server.address().port;
+const server = app.listen(process.env.PORT, function () {
+  const host = server.address().address;
+  const port = server.address().port;
   console.log('Example app listening at http://%s:%s', host, port);
 });
