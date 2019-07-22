@@ -195,7 +195,7 @@ export function addLanscapeCardDetailColumnWithCustomText(textSymbol, text1, tex
       }
       else if (customEffect == 'underline') {
         return (
-          <tspan x={ lineNo ? '12' : ''} style={{height:60}} style={{flexDirection: 'row'}}><tspan style={{ color: '#000000', textAlign: 'right', fontStyle: fontStyleValue }} x={textSymbol !== '' ? -12 : ''}>{textSymbol}</tspan><tspan>{text1}</tspan><tspan>{text2}</tspan><tspan>{dotsymbolText}</tspan><tspan x="80" style={{ fontWeight: 'bold', textDecorationLine: 'underline', textDecorationStyle: 'solid', textDecorationColor: '#000000', paddingBottom: 2, fontStyle: fontStyleValue }}>{text3}</tspan></tspan>
+          <tspan x={ lineNo ? '12' : ''} style={{height:60}} style={{flexDirection: 'row'}}><tspan style={{ color: '#000000', textAlign: 'right', fontStyle: fontStyleValue }} x={textSymbol !== '' ? -12 : ''}>{textSymbol}</tspan><tspan>{text1}</tspan><tspan>{text2}</tspan><tspan>{dotsymbolText}</tspan><tspan style={{ textDecorationLine: 'underline', textDecorationStyle: 'solid', textDecorationColor: '#000000', paddingBottom: 2, fontStyle: fontStyleValue }}>{text3}</tspan></tspan>
         )
       }
     }

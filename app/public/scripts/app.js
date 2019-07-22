@@ -252,12 +252,12 @@ export default class App extends React.Component {
         </g>
         </g>
       </g>
-      <text transform="matrix(1 0 0 1 -234.75 98.5)" style={{fill:'#FFFFFF', fontFamily:'Montserrat', fontSize:'13px'}}>{percentageVsLefty}</text>
+      <text transform={playerInitailDetail['player_type'] == 'PITCHER' ? "matrix(1 0 0 1 -150 98.5)" : "matrix(1 0 0 1 -235 98.5)" } style={{fill:'#FFFFFF', fontFamily:'Montserrat', fontSize:'13px'}}>{percentageVsLefty}</text>
       <text transform="matrix(1 0 0 1 133.75 98.5)" style={{fill:'#FFFFFF', fontFamily:'Montserrat', fontSize:'13px'}}>{playerInitailDetail['power_left']}</text>
       <text transform="matrix(1 0 0 1 -175.6792 134.5)" style={{fill:'#5D678E', fontFamily:'Montserrat', fontSize:'16px'}}>
-      1</text>
-      <text transform="matrix(1 0 0 1 -22.8211 135.5)" style={{fill:'#5D678E', fontFamily:'Montserrat', fontSize:'16px'}}>2</text>
-      <text transform="matrix(1 0 0 1 137.8456 134.8333)" style={{fill:'#5D678E', fontFamily:'Montserrat', fontSize:'16px'}}>3</text>
+      {playerInitailDetail['player_type'] == 'PITCHER' ? 4 : 1 }</text>
+      <text transform="matrix(1 0 0 1 -22.8211 135.5)" style={{fill:'#5D678E', fontFamily:'Montserrat', fontSize:'16px'}}>{playerInitailDetail['player_type'] == 'PITCHER' ? 5 : 2 }</text>
+      <text transform="matrix(1 0 0 1 137.8456 134.8333)" style={{fill:'#5D678E', fontFamily:'Montserrat', fontSize:'16px'}}>{playerInitailDetail['player_type'] == 'PITCHER' ? 6 : 3 }</text>
       { helper.renderColumn(cardDataFromXML, 0, -211.5) }
       { helper.renderColumn(cardDataFromXML, 1, -60.5) }
       { helper.renderColumn(cardDataFromXML, 2, 101.1667) }
@@ -308,12 +308,12 @@ export default class App extends React.Component {
         </g>
         </g>
       </g>
-      <text transform="matrix(1 0 0 1 -235 100)" style={{fill:'#FFFFFF', fontFamily:'Montserrat', fontSize:'13px'}}>{percentageVsRighty}</text>
+      <text transform={playerInitailDetail['player_type'] == 'PITCHER' ? "matrix(1 0 0 1 -150 100)" : "matrix(1 0 0 1 -235 100)" } style={{fill:'#FFFFFF', fontFamily:'Montserrat', fontSize:'13px'}}>{percentageVsRighty}</text>
       <text transform="matrix(1 0 0 1 133.5 100)" style={{fill:'#FFFFFF', fontFamily:'Montserrat', fontSize:'13px'}}>{playerInitailDetail['power_right']}</text>
       <text transform="matrix(1 0 0 1 -175.9292 136)" style={{fill:'#DB0040', fontFamily:'Montserrat', fontSize:'16px'}}>
-      1</text>
-      <text transform="matrix(1 0 0 1 -23.0711 137)" style={{fill:'#DB0040', fontFamily:'Montserrat', fontSize:'16px'}}>2</text>
-      <text transform="matrix(1 0 0 1 137.5956 136.3333)" style={{fill:'#DB0040', fontFamily:'Montserrat', fontSize:'16px'}}>3</text>
+      {playerInitailDetail['player_type'] == 'PITCHER' ? 4 : 1 }</text>
+      <text transform="matrix(1 0 0 1 -23.0711 137)" style={{fill:'#DB0040', fontFamily:'Montserrat', fontSize:'16px'}}>{playerInitailDetail['player_type'] == 'PITCHER' ? 5 : 2 }</text>
+      <text transform="matrix(1 0 0 1 137.5956 136.3333)" style={{fill:'#DB0040', fontFamily:'Montserrat', fontSize:'16px'}}>{playerInitailDetail['player_type'] == 'PITCHER' ? 6 : 3 }</text>
       { helper.renderColumn(cardDataFromXML, 3, -211.5) }
       { helper.renderColumn(cardDataFromXML, 4, -60.5) }
       { helper.renderColumn(cardDataFromXML, 5, 101.1667) }
